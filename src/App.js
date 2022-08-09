@@ -10,7 +10,7 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    axios.get("/messages/sync")
+    axios.get("https://whatsapp--clone-sandhya.herokuapp.com/messages/sync")
       .then(response => {
         setMessages(response.data)
       })
